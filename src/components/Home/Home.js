@@ -11,7 +11,7 @@ const Home = () => {
     <div>
       <Link to="/create">
         <Button className="create__btn" variant="primary">
-          Create User
+          Form for Create User
         </Button>
       </Link>
 
@@ -27,7 +27,7 @@ const Home = () => {
         </thead>
         <tbody>
           {users.map((user) => (
-            <tr>
+            <tr key={user.id}>
               <td>{user.id}</td>
               <td>{user.name}</td>
               <td>{user.position}</td>
